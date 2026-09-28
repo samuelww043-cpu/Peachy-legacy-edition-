@@ -1,0 +1,77 @@
+PEACHY LEGACY — NOTES
+
+This file contains all the tracked numbers I have, what distro I used, and how to reproduce the tests I did.
+
+This file will be updated constantly as I get new numbers, results, etc.
+
+
+TEST SYSTEM
+
+Operating system: Arch Linux
+
+The main comparison was done using fresh profiles, default settings, the same seed, and the same test conditions for both versions.
+
+Seed: 123456789
+
+Stronghold position: (-34, -48)
+
+The player was left untouched during the 60-second in-world test.
+
+
+60-SECOND IN-WORLD RAM TEST
+
+Original 4JCraft:
+RSS: 1314.2 MiB
+PSS: 1297.7 MiB
+
+Peachy Legacy:
+RSS: 555.7 MiB
+PSS: 539.3 MiB
+
+RSS reduction:
+758.5 MiB less RAM
+
+Percentage reduction:
+Approximately 57.7% less RAM than the original build.
+
+
+60-SECOND PEACHY MENU TEST
+
+RSS: 177.3 MiB
+PSS: 160.9 MiB
+Private Dirty Memory: 118.9 MiB
+
+Resolution: 1280 × 720
+
+The original/default visual settings were kept unchanged.
+
+
+LOAD TIME DURING THE SAME WORLD TEST
+
+Original 4JCraft:
+21.02 seconds from launch to world
+
+Peachy Legacy:
+32.00 seconds from launch to world
+
+
+GAMEPLAY TESTING
+
+The goal of Peachy Legacy is to reduce RAM usage without changing the actual gameplay, terrain generation, visuals, or game mechanics.
+
+Testing included:
+
+- Seeds
+- Spawn points
+- Stronghold positions
+- Terrain generation
+- Visuals
+- Mob behavior
+- Mob AI
+- World output
+
+1,000 mobs were spawned in both the original build and Peachy Legacy to compare mob AI and behavior.
+
+The same seeds were also tested for spawn points and stronghold placement.
+
+World files were compared using their SHA/hash to check that Peachy was producing the same world output as the original build.
